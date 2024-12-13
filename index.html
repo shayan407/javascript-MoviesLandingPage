@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="flex flex-col justify-center items-center bg-gray-900">
+    <div class="bg-[#7b1a1a] w-full py-10 flex flex-col justify-center items-center z-10">
+        <h1 class="text-3xl font-bold text-[#FFD700]">Search Movies</h1>
+        <div class="w-[45%] relative mt-5">
+            <input class="w-full py-2 px-7 rounded-[50px] bg-gray-900 text-[white]" type="text" id="search-input" placeholder="Search Movies">
+            <button class="bg-[#7b1a1a] absolute right-[2px] top-[2px] rounded-[50px] py-1 px-6 text-xl text-[#FFD700] font-semibold active:scale-95 outline-none" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="absolute right-[60px] top-[2px] rounded-[50px] py-1 px-6 text-xl text-gray-500 font-semibold active:scale-95" id="clearBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+    <p id="disRes" class="text-white text-xl mt-10"></p>
+    <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-10 justify-center z-10" id="container">
+    </div>
+    <h1 class="text-3xl text-white font-bold" id="likedMoviesHeading">Liked Movies</h1>
+    <div class="container2 container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-10 justify-center z-10" id="container2">
+    </div>
+    <div class="card-model fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center opacity-0" id="card-model">
+        <div class="card-details relative bg-white py-5 px-5 rounded w-[30%] text-black flex flex-col items-center justify-center" id="card-details">
+            <i class="fa-solid fa-circle-xmark" id="closeBtn"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
